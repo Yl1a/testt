@@ -1,0 +1,397 @@
+/* basic style settings */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1edf1;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.link {
+  color: #31302b;
+}
+.btn {
+  border: 2px solid transparent;
+  background: linear-gradient(to right, #a98fb1, #4d0a61);
+  background-repeat: no-repeat;
+  padding: 12px 40px;
+  border-radius: 12px;
+  color: #f1edf1;
+  font-family: inherit;
+  transition: ease-in-out 0.1s;
+}
+
+.btn:hover {
+  border: 2px solid #6a25a3;
+  color: #31302b;
+  background: transparent;
+}
+
+img {
+  width: 100%;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.block {
+  margin-top: 50px;
+}
+.title_content {
+  max-width: fit-content;
+  margin: 40px 0;
+}
+.title {
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.row {
+  border-bottom: 2px solid #4d0a61;
+  max-width: 40%;
+}
+
+/* end */
+
+/* header */
+header {
+  background: linear-gradient(#a98fb1, #a98fb1ad);
+}
+.header_content {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+/* banner */
+.banner {
+  /* background: linear-gradient(#00000000, #f1edf1); */
+  overflow: hidden;
+  position: relative;
+  color: #f8f8f8;
+  width: 100vw;
+  max-height: 80vh;
+}
+.banner::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#00000000, #f1edf1de);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.banner_video{
+  padding-bottom: 56.25%;
+}
+.banner video{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+.spec_text {
+  font-weight: 400;
+}
+
+.banner_content {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top:0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10%;
+  padding: 50px 0;
+  z-index: 4;
+}
+.banner_img img {
+  max-width: 500px;
+  filter: drop-shadow(23px 12px 0px #a98fb1);
+}
+.specifications {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  font-size: 1vw;
+}
+
+.specs_items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.specs_item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list_marker {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(#5a3a6434, #a98fb1);
+  border-radius: 20px 4px 20px 4px;
+}
+/* end */
+/* end */
+
+/* main */
+/* block second_components_product */
+.components_product_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.components_items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.components_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: 80%;
+  text-align: center;
+}
+.components_img {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(#a98fb177, #a98fb169),
+    url(../img/nandhu-kumar-XDXQ0d1SaIo-unsplash.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 50px;
+}
+.product_img {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+}
+.product_img img {
+  filter: drop-shadow(7px 10px 2px #a98fb169);
+  width: 80%;
+}
+/* end */
+
+/* block third_comments */
+.comments {
+  background: linear-gradient(#a98fb100, #a98fb1);
+  padding-bottom: 50px;
+}
+.comments_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.owl-carousel .owl-stage {
+  height: 540px;
+  display: flex;
+  align-items: center;
+}
+
+.comments_item {
+  background: #f1edf1;
+  width: 300px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  height: fit-content;
+  box-shadow: 4px 4px #a98fb1;
+}
+.profile_img {
+  position: relative;
+  top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.icon {
+  min-width: 160px;
+  min-height: 160px;
+  background: #a98fb1;
+  border-radius: 50%;
+}
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* end */
+
+/* block fouth_promo */
+.main_info {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+}
+.main_info_content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 48px;
+}
+.about_img {
+  min-width: 40%;
+  border-radius: 8px 140px;
+  background: linear-gradient(#a98fb100, #a98fb1);
+}
+.spec_promo {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.spec_item {
+  display: flex;
+  gap: 10px;
+  width: 28%;
+}
+
+/* end */
+/* fith block_form_for_buy */
+.buy {
+  background: #a98fb1;
+  padding: 100px 0;
+}
+.title_name {
+  color: #5a3a64;
+}
+.buy_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.buy_main_info {
+  min-width: 48%;
+  background: #f1edf173;
+  border-radius: 20px;
+  padding: 48px;
+}
+.buy_img img {
+  filter: drop-shadow(23px 12px 0px #56475a9a);
+}
+.name {
+  font-size: 36px;
+}
+.cost_time {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+}
+.cost {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.cost .text {
+  position: relative;
+  top: 10px;
+  font-size: 18px;
+  text-decoration-line: line-through;
+  font-weight: 400;
+}
+.sale {
+  font-weight: 700;
+  font-size: 28px;
+  color: #4d0a61;
+}
+.full_time {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #564168b4;
+}
+
+.jst-hours {
+  float: left;
+}
+.jst-minutes {
+  float: left;
+}
+.jst-seconds {
+  float: left;
+}
+.buyForm {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input {
+  width: 100%;
+  outline: none;
+  border: 1px solid transparent;
+  padding: 8px 0;
+  border-radius: 8px;
+  text-indent: 20px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+/* end */
+/* end */
+
+/* footer */
+/* end */
+
+.textflow {
+  font-size: 36px;
+  background: linear-gradient(
+    90deg,
+    #91689e,
+    #d37d81,
+    #724497,
+    #884377,
+    #91689e
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textflow 5s linear infinite;
+}
+@keyframes textflow {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 200% center;
+  }
+}
+.column_mobile {
+  display: none;
+}

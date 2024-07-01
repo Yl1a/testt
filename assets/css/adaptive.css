@@ -1,0 +1,136 @@
+@media screen and (max-width: 1040px) {
+  .banner_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0;
+    flex-direction: column;
+    gap: 40px;
+    color: #31302b;
+  }
+  .banner_img {
+    position: absolute;
+    right: 0;
+    bottom: -78px;
+    z-index: -1;
+  }
+  .banner_img img {
+    max-width: 58%;
+    filter: drop-shadow(23px 12px 0px #a98fb1);
+  }
+  .specifications {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 2vw;
+    background: #a98fb1d3;
+    padding: 40px;
+    border-radius: 20px;
+    color:#f1edf1de;
+    font-weight: 700;
+  }
+  .list_marker{
+    display: none;
+  }
+  .specifications .buy_btn{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .buy_content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  .buy_img {
+    position: absolute;
+    width: 140px;
+    right: 0;
+    top: -80px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .main_info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .main_info_content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 0px;
+  }
+  .spec_item {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .specifications {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 3vw;
+    background: #a98fb1d3;
+    padding: 20px;
+    color:#f1edf1de;
+    font-weight: 700;
+  }
+  .list_marker{
+    display: none;
+  }
+  .specifications .buy_btn{
+    display: none;
+  }
+  .components_product_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .column_mobile {
+    display: block;
+  }
+  .column_desc {
+    display: none;
+  }
+  .components_items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .components_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 455px) {
+  .buy_img {
+    display: none;
+  }
+  .cost_time {
+    display: flex;
+    align-items: flex-start;
+    gap: 0px;
+    flex-direction: column;
+  }
+
+  .input_item .btn {
+
+    padding: 12px 0px;
+}
+}
